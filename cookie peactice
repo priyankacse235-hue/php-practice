@@ -8,7 +8,7 @@
 <button name="button" value="display" >Displays Cookies </button>
 <br/>
 <br/>
-<button name="button" value="set" >Delete Cookies </button>
+<button name="button" value="delete" >Delete Cookies </button>
 </form>
 
 <?php
