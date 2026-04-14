@@ -1,0 +1,9 @@
+<?php
+ class Demo{
+ 
+}
+class cars extends Demo{
+
+}
+$c1 = new Demo();
+echo "<br>";
