@@ -1,0 +1,22 @@
+<?php
+ trait  productFeature1{
+     function productDetails(){
+        echo 500;
+     }
+ }
+     trait  productFeature2{
+     function productImagesDetails(){
+        echo 50;
+     }
+ }
+ class company{
+   
+  use productFeature1;
+   use productFeature2;
+ }
+
+$cmp = new company ();
+$cmp->productDetails();
+echo "<br>";
+$cmp->productImagesDetails();
+?>
