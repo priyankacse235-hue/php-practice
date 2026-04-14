@@ -1,0 +1,26 @@
+<?php
+ interface  productFeature{
+     function productDetails();
+     function productImages();
+     function productOwnerDetails();
+ }
+ class uplodeProduct implements productFeature{
+    function productDetails(){
+        echo "product details";
+    }
+    function productImages(){
+        echo "product  imagesdetails";
+    }
+    function productOwnerDetails(){
+        echo "product owner details";
+    }
+
+ }
+$uplode = new uplodeProduct ();
+$uplode->productDetails();
+echo "<br>";
+$uplode->productImages();
+echo "<br>";
+$uplode->productOwnerDetails();
+
+?>
