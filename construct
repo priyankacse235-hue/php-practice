@@ -1,0 +1,9 @@
+<?php
+class Cons{
+function __construct(){
+    echo "construct called";
+
+}
+}
+$cd = new Cons();
+?>
