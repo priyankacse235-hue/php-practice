@@ -1,0 +1,21 @@
+class userAuth{
+function login($userType){
+         echo "$userType logged in";
+    }
+}
+class students extends userAuth{
+ 
+}
+
+class teacher extends userAuth{
+    
+}
+$s1 = new students();
+$s1->login("student");
+
+echo "<br>";
+$t1= new teacher();
+$t1->login("teacher");
+
+
+?>
