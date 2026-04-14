@@ -1,0 +1,14 @@
+<?php
+class constantDemo{
+ const collegeName="APS college";
+ function getCollegeName(){
+    echo self:: collegeName;   //APScollege
+ }
+
+}
+echo constantDemo :: collegeName;
+$c1 = new constantDemo();
+echo "<br>";
+$c1->getCollegeName();
+                               //APScollege
+?>
