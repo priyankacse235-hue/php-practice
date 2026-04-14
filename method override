@@ -1,0 +1,18 @@
+<?php
+class teacher{
+  function age(){
+    echo "my age is 40";
+  }
+}
+
+class students extends teacher{
+    function age(){
+        echo "my age is 20";
+    }
+ 
+}
+
+$st1 = new students();
+$st1->age();
+
+?>
