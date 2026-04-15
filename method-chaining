@@ -1,0 +1,22 @@
+<?php
+ class productFeatures{
+     function productDetails(){
+        echo "maximum product 500. ";
+        return $this;
+     }
+ 
+     function productImagesDetails(){
+        echo "product images 50. ";
+         return $this;
+     }
+ 
+     function producOwnertDetails(){
+        echo "product owner 1. ";
+         
+     }
+ }
+
+
+$cmp = new productFeatures ();
+$cmp->productDetails()->productImagesDetails()->producOwnertDetails();
+?>
