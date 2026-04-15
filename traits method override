@@ -1,0 +1,27 @@
+<?php
+ trait  productFeature1{
+     function productDetails(){
+        echo 500;
+     }
+ }
+     trait  productFeature2{
+     function productDetails(){
+        echo 50;
+     }
+ }
+ class company{
+   
+  use productFeature1;
+   use productFeature2{
+    productFeature1::productDetails insteadOf productFeature2;//function 1 ko call karne k liye
+    productFeature2::productDetails as productFeature2;       //function 2 ko call karne k liye
+    }
+
+
+ }
+
+$cmp = new company ();
+$cmp->productDetails();//function 1 ko call karne k liye
+echo "<br>";
+$cmp->productFeature2();//function 2 ko call karne k liye
+?>
